@@ -1,0 +1,47 @@
+@import 'colors';
+@import '~bootstrap/dist/css/bootstrap.css';
+
+body {
+  height: 100vh;
+  #root {
+    height: 100vh;
+  }
+  font-size: 18px;
+}
+* {
+  letter-spacing: 2px;
+  scroll-behavior: smooth;
+}
+
+main {
+  position: relative;
+  height: 100%;
+}
+
+.row {
+  margin: 0;
+}
+.section-heading {
+  font-size: 20px;
+}
+
+.page-heading {
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.displayFlex {
+  display: flex;
+}
+
+.mr20 {
+  margin-right: 20px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}

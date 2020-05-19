@@ -1,0 +1,39 @@
+@import '../../styles/main.scss';
+
+.btn {
+  width: 100%;
+  position: relative;
+  padding: 12px 20px 12px 20px;
+  border-radius: 50px;
+  font-size: 18px;
+  transition: .3s ease-in;
+  &:focus {
+    box-shadow: none;
+  }
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.btn-outlined {
+  border: 2px solid $primary-color;
+  color: $primary-color;
+  &:disabled {
+    border: 2px solid $light-grey;
+    color: $light-grey;
+  }
+}
+
+.btn-filled {
+  border: 2px solid $primary-color;
+  background: $primary-color;
+  color: $white;
+  &:disabled {
+    // border: 2px solid $light-grey;
+    // background: $light-grey;
+    // color: $white;
+  }
+  &:hover {
+    color: $white;
+  }
+}

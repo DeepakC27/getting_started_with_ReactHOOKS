@@ -1,0 +1,85 @@
+@import '../styles/main.scss';
+
+.login-form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0px 0px 5px 9px rgba(123, 122, 122, 0.05);
+  .login-headings {
+    padding: 15px 30px;
+    .active {
+      color: $primary-color !important;
+      div {
+        background: $primary-color !important;
+        width: 20% !important;
+      };
+    }
+    .section-heading {
+      font-size: 30px;
+      padding: 10px 0;
+      color: $light-grey;
+      div {
+        background: $light-grey;
+        height: 2px;
+        width: 0%;
+        margin-top: 5px;
+        transition: width .5s ease-in;
+      }
+    }
+  }
+  .signUp-form-heading {
+    color: $primary-color;
+    margin: 2rem 0;
+  }
+  .login-form-fields {
+    padding: 20px 30px;
+    transition: height 2s ease-in;
+    .input-wrapper {
+      margin-bottom: 28px;
+    }
+    button {
+      border: 2px solid $primary-color;
+      color: $primary-color;
+      &:disabled {
+        border: 2px solid $light-grey;
+        color: $light-grey;
+      }
+    }
+  }
+  .signIn-wrapper {
+    .mobile-no-wrapper {
+      position: relative;
+      &:focus { div { color: $primary-color; } }
+      input {
+        padding: 10px 0 10px 40px;
+        &:focus + span {
+          padding-left: 0;
+        }
+      }
+      .input-filled {
+        padding-left: 0;
+      }
+      span {
+        padding-left: 40px;
+      }
+      .country-code {
+        position: absolute;
+        left: 0;
+        color: $light-grey;
+        padding: 10px 0;
+      }
+    }
+    .number input {
+      letter-spacing: 20px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .login-form-container {
+    box-shadow: none !important;
+  }
+}
